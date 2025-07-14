@@ -1,0 +1,17 @@
+paths:
+  clean: 'data/clean/'
+  raw: 'data/raw/'
+  model: 'models/'
+  log: 'logs/'
+  output: 'output/'
+
+global:
+  sfreq: 250.
+  n_times: 300
+  n_channels: 128
+  tmin: -0.2
+  tmax: 0.996
+  file_ext: 'mat'
+  rs: 42
+
+

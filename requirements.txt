@@ -1,0 +1,14 @@
+numpy
+matplotlib
+mne
+scikit-learn
+scipy
+tqdm
+pandas
+joblib
+pytest
+pyyaml
+black
+flake8
+isort
+ruff
