@@ -4,7 +4,7 @@
 
 ## Nom
 
-Projet TER.
+Classification des phonèmes.
 
 ## Description
 
@@ -44,23 +44,38 @@ Etant donné des enregistrements Electroencéphalographiques (EEG), nous allons 
 - [x] `README.md` :
 - [x] `LICENSE` :
 
-## Usage
+## Installation
+
+1. Cloner le dépôt :
+   ```
+   git clone https://github.com/brahimharounhassan/phonems-classification.git
+   cd phonems-classification
+   ```
+2. Installer les dépendances :
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Exemple d’utilisation
 
 Une fois les machines virtuelles en fonctionnement :
 Téléchargez (zip) ou clonez le projet à l'aide d'un terminal dans un dossier spécifique.:
 
 ```
 # - fichier train_micro_avg.py pour l'entrainement.
-cd ter_project/
 # sans remise
 python src/train_micro_avg.py  --data_dir ./data/clean --output_dir ./output  --iter 50 --start_n 1 --end_n 11 --n_splits 5 --subject 33
+
 # ou avec remise
 python src/train_micro_avg.py  --data_dir ./data/clean --output_dir ./output  --reuse true --iter 50 --start_n 1 --end_n 11 --n_splits 5 --subject 33
+
 # - fichier evaluate.py pour l'évaluation.
 # Pour un sujet spécifique sans selection d'essais et sans remise
 python src/evaluate.py  --data_dir ./output/train --output_dir ./output  --iter 100  --avg true --subject 3
+
 # Pour un sujet spécifique sans selection d'essais et avec remise
 python src/evaluate.py  --data_dir ./output/train --output_dir ./output  --iter 100  --avg true --reuse true --subject 3
+
 # Pour un sujet spécifique avec selection d'essais
 python src/evaluate.py  --data_dir ./output/train --output_dir ./output  --iter 100  --subject all --include 4,5 --drop_t t
 
@@ -71,11 +86,11 @@ python src/evaluate.py  --data_dir ./output/train --output_dir ./output  --iter 
 python src/train.py  --data_dir ./data/clean --output_dir ./output  --iter 100  --subject 27
 ```
 
--->
-
 ## Auteur
 
-- [Brahim Haroun Hassan]
+- Haroun Hassan BRAHIM - Ingénieur en Intelligence Artificielle | Spécialisé en Machine Learning et Deep Learning
+
+  [LinkedIn](https://www.linkedin.com/in/brahimharounhassan/) | [Github](https://github.com/brahimharounhassan) | [ResearchGate](https://www.researchgate.net/profile/Haroun-Hassan-Brahim)
 
 ## License
 
