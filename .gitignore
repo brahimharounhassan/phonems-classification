@@ -2,12 +2,11 @@
 __pycache__
 .DS_Store
 .vscode
-raw/
+
 .coverage
 *.bin
-*.mat
-.pytest_cache
-.gitlab-ci.yml
 
+.pytest_cache
 .ipynb_checkpoints/
+
 .venv/
